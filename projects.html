@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yimin Gu's homepage</title>
+	<link rel="stylesheet" href="./my.css">
+</head>
+<body>
+	<p style="color:yellow;" id="curs">Yimin Gu's homepage </p>
+<script>
+/*var con = $('.curs');*/
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function start(){
+	while(1) {
+		document.getElementById("curs").innerHTML += "_";
+		await sleep(1000);
+		document.getElementById("curs").innerHTML = document.getElementById("curs").innerHTML.slice(0, -1);
+		await sleep(1000);
+	}
+	/*con.text('hello');*/
+	/*
+	setInverval(function(){
+		if(con.length === 1){
+			con.text('__');
+		}
+		else{
+			con.text('_');
+		}
+		start();
+	}, 1000);
+	*/
+
+}
+start();
+</script>
+	<p>+ My Projects</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://github.com/ustcpetergu/SiliTune" target="_blank">SiliTune</a> the CPU power manager</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://github.com/ustcpetergu/nha" target="_blank">nha</a> the NetHack assistant(cheater)</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://github.com/ustcpetergu/PhysicsExp" target="_blank">PhysicsExp</a> and <a href="https://github.com/ustcpetergu/USTCPhysExpData" target="_blank">USTCPhysExpData</a> where you can find something related to the physics experiment(大物实验)</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;* <a href="https://github.com/ustcpetergu/USTCComputer" target="_blank">USTCComputer</a> which contains my school homework projects</p>
+</body>

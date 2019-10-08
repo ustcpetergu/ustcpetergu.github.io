@@ -46,10 +46,10 @@ body info{
 color:#2EC7C7;
 font-size:20px;
 }
-/*body a{*/
-/*color:#FFFFFF;*/
+body a{
+color:#FFFFFF;
 /*font-size:20px;*/
-/*}*/
+}
 
 div#mainmenu{
 width:1000px;
