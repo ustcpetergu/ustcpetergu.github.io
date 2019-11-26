@@ -50,16 +50,22 @@ start();
 	<hr/>
 	<p id="funny"></p>
 <script>
-	var funnymessagearray = [
-		'You are the (no hit counter) one to come. Anyway, have a nice day.',
-		'Have a nice day.',
-		'Stay determined!',
-		'The end.'
-	];
-	document.getElementById("funny").innerHTML = funnymessagearray[Math.floor(Math.random()*funnymessagearray.length)];
+var funnymessagearray = [
+	'VGhlIGVuZC4=',
+	'U3RheSBkZXRlcm1pbmVkIQ==',
+	'WW91IGFyZSB0aGUgKG5vIGhpdCBjb3VudGVyKSBvbmUgdG8gY29tZS4gQW55d2F5LCBoYXZlIGEgbmljZSBkYXku',
+	'SGF2ZSBhIG5pY2UgZGF5Lg=='
+];
+var d = new Date();
+var seed = d.getFullYear()*1000 + d.getMonth()*100 + d.getDay();
+function randomm() {
+	var x = Math.sin(seed++) * 10000;
+	return x - Math.floor(x);
+}
+document.getElementById("funny").innerHTML = atob(funnymessagearray[Math.floor(randomm()*funnymessagearray.length)]);
 </script>
 	<hr/>
 	<!--<hr/>-->
-	<footer>Last updated on: 2019.10.8</footer>
+	<footer>Last updated on: 2019.11.26</footer>
 </body>
 </html>
