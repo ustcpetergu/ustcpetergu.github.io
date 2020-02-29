@@ -13,9 +13,11 @@ padding: 5vh 10vw;
       /*color: #123134;*/
 font-size:20px;
 }
-a{
-list-style-type:none;
-}
+/*a{*/
+/*background-color:#00FFFF;*/
+/*color:#00FFFF;*/
+/*list-style-type:none;*/
+/*}*/
 
 .center{
 text-align:center;
@@ -39,11 +41,15 @@ font-size:20px;
 }
 body a{
 color:#FFFFFF;
+/*color:#00FFFF;*/
 /*font-size:20px;*/
 }
 .log{
 color:grey;
 opacity:0.25;
 font-size:12pt;
+}
+.project{
+padding-left:60px; text-indent:-22px;
 }
 
