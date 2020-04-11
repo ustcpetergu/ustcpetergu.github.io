@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yimin Gu's homepage</title>
+	<title>Peter Gu's homepage</title>
 	<link rel="stylesheet" href="./my.css">
 </head>
 <body style="v-align:middle;text-align:center;">
 <div style="display:inline-block;text-align:left;">
 	<p style="color:grey"><b>Why not have a rest here, wanderer?</b></p>
 	<p style="color:grey">Welcome to...</p>
-	<p style="color:yellow;" id="curs">Yimin Gu's homepage  </p>
+	<p style="color:yellow;" id="curs">Peter Gu's homepage  </p>
 <script>
 /*var con = $('.curs');*/
 function sleep(ms) {
@@ -24,33 +24,14 @@ async function start(){
 		document.getElementById("curs").innerHTML += " ";
 		await sleep(1000);
 	}
-	/*con.text('hello');*/
-	/*
-	setInverval(function(){
-		if(con.length === 1){
-			con.text('__');
-		}
-		else{
-			con.text('_');
-		}
-		start();
-	}, 1000);
-	*/
-
 }
 start();
 </script>
-	<!--<br/>-->
-	<!--<p>Though abandoned long ago, it's still home. </p>-->
-	<!--<p>Feel free to imagine those pages and pictures that don't exist and maybe never will. </p>-->
 	<p><a href="./MyBlog/">Blog</a>
 	<a href="https://github.com/ustcpetergu">GitHub</a>
 	<a href="./projects.html">Projects</a>
 	<a href="./MyBlog/about">About</a>
 	<a href="/404.html">404</a></p>
-	<!--<p>Are you interested in  or ? </p>-->
-	<!--<p>Or, are you interested in <a href="https://ustcpetergu.github.io" style="color:cyan">my blog</a> or <a href="https://github.com/ustcpetergu" style="color:cyan">my GitHub</a>, where the real things are in? </p>-->
-	<!--<hr/>-->
 	<!--<p id="funny" style="color:gray"></p>-->
 <script>
 var funnymessagearray = [
@@ -69,6 +50,7 @@ document.getElementById("funny").innerHTML = atob(funnymessagearray[Math.floor(r
 </script>
 	<!--<hr/>-->
 	<p></br></p>
+	<p class="log">[2020.03.00] Now use HTTPS.</p>
 	<p class="log">[2020.02.29] Added CC license to blog. Website update.</p>
 	<p class="log">[2019.12.21] Website reshaped.</p>
 	<p class="log">[2019.12.20] ustcpetergu.com now online!</p>
